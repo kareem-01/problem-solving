@@ -1,7 +1,5 @@
 package arrays;
 
-import java.util.Arrays;
-
 public class MissingNumber {
     public static void main(String[] args) {
         System.out.println(missingNumber(new int[]{0, 1}));
