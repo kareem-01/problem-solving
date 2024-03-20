@@ -1,5 +1,6 @@
 package arrays;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
@@ -11,7 +12,7 @@ public class MergeIntervals {
 
     public static int[][] merge(int[][] intervals) {
         Arrays.sort(intervals, Comparator.comparingInt(c -> c[0]));
-        List<int[]> result = new java.util.ArrayList<>();
+        List<int[]> result = new ArrayList<>();
         result.add(intervals[0]);
         for (int[] interval : intervals) {
             if (interval[0] <= result.getLast()[1]) {
